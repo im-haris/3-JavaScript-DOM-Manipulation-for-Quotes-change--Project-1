@@ -1,0 +1,160 @@
+/* General Style
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: url(img/project-1.jpg) no-repeat center center/cover;
+}
+
+.container {
+    height: 550px;
+    width: 450px;
+}
+
+.header {
+    border: solid 2px white;
+    background-color: black ;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.main-content {
+    background-color: white;
+    height: 300px;
+    padding: 80px 20px;
+    border-radius: 19px;
+    
+}
+
+.main-content .text-area {
+    font-size: 1.2rem;
+    width: 100%;
+    
+    
+}
+
+.main-content .Author {
+    line-height: 5rem;
+    color: red;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-top: 1px;
+    padding: 5px
+    
+}
+
+.button #new_quote {
+    background-color: grey;
+    border-radius: 15px;
+    color: white;
+    padding: 7px 15px;
+    
+
+}
+
+.button #new_quote:active {
+    background-color: lightblue;
+    
+
+} */
+
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: url(img/project-1.jpg) no-repeat center center/cover;
+}
+
+@media (min-width: 30em) {
+    .button #new_quote {
+       width: 100%;
+    }
+  }
+
+  @media (min-width: 50em) {
+    .button {
+       margin-inline: 25px;
+       
+    }
+  }
+.container {
+    height: 550px;
+    width: 450px;
+}
+
+.header {
+    border: solid 2px white;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-content {
+    background-color: white;
+    height: 300px;
+    padding: 80px 20px;
+    border-radius: 19px;
+}
+
+.main-content .text-area {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.main-content .Author {
+    line-height: 5rem;
+    color: red;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-top: 1px;
+    padding: 5px;
+}
+
+.button {
+    position: absolute;
+    top: 365px;
+    left: 44%;
+    
+}
+
+.button #new_quote {
+
+    
+    background-color: grey;
+    border-radius: 15px;
+    color: white;
+    padding: 7px 15px;
+}
+
+.button #new_quote:active {
+    background-color: lightblue;
+}

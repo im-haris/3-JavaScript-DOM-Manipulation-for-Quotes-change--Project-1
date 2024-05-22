@@ -1,0 +1,74 @@
+body {
+    background: url(img/project-2.jpg) no-repeat center center/cover;
+    height:100vh;
+    position: relative;
+}
+
+#open-btn {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: solid 2px white;
+    padding: 10px;
+    box-shadow: white;
+    font-size: 2rem;
+    width: 360px;
+    transition: .5s;
+}
+
+#open-btn:hover {
+    background: white;
+    color: black;
+}
+
+#modal-container #modal {
+    position: absolute;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border: solid 2px white;
+    color: black;
+    top: 50%;
+    left: 20%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    animation-name: animatemodal;
+    animation-duration: .5s;
+}
+
+#close-btn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: red
+
+}
+
+#modal-container {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    z-index: 1;
+}
+
+@Keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+
+    }
+
+    to {
+        top: 100%;
+        opacity: 1;
+
+    }
+
+}
